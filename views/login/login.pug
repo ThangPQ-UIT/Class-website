@@ -5,7 +5,7 @@ block content
 			.alert.alert-danger= error
 	form(action="/login", method="POST")
 		.form-group
-			label(for="email") Email
+			label(for="email") Username(Fullname)
 			input(name="email",type='text', class="form-control", id="email", value=values ? values.email : '') 
 			label(for="password") Password
 			input(name="password",type='text', class="form-control", id="password", value=values ? values.password : '')

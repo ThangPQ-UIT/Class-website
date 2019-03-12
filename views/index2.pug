@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    title A3-K45
+    link(href='https://fonts.googleapis.com/css?family=Architects Daughter', rel='stylesheet')
+    style(type='text/css').
+      body {
+      margin: 0;
+      }
+      /*container*/
+      .container {
+      display: flex;
+      flex-direction: column;
+      height: 624px;
+      width: 100%;
+      background-image: url(/img/bg-masthead.jpg);
+      color: #000;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      }
+      .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      img {
+      border-radius: 15px;
+      }
+      h1 {
+      font-weight: 700;
+      font-family: 'Architects Daughter';
+      margin: 0px 0px 0px 10px;
+      }
+      #school {
+      font-size: 2rem;
+      }
+      #class {
+      font-size: 3rem;
+      }
+      /*form*/
+      .form {
+      position: absolute;
+      right: 60px;
+      top: 60px;
+      }
+      if login
+        .log {
+        opacity: 0;
+        }
+      a {
+      padding: 10px;
+      background-color: black;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      }
+      #reg {
+      margin-left: 38px;
+      }
+  body
+    .container
+      .form
+        .form-text
+          a#log(href='/login') Login
+          a#reg(href='/user/create') Register
+      .schoolName
+        h1#school TRƯỜNG TRUNG HỌC PHỔ THÔNG NGUYỄN THỊ MINH KHAI
+        .logo
+          img(src='/img/minh_khai.jpg')
+      div 
+        h1#class
+          em 12A3 - Khóa 45

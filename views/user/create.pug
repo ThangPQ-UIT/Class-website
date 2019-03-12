@@ -6,8 +6,22 @@ block content
 	h3 NEW ACCOUNT
 	form(action="/user/create", method="POST")
 		.form-group
-			label(for="name") Name
+
+			label(for="fullname") Full Name
+			input(name="fullname",type='text', class="form-control", id="fullname", value=values ? values.name : '') 
+
+			label(for="name") UserName
 			input(name="name",type='text', class="form-control", id="name", value=values ? values.name : '') 
+
 			label(for="phone") Phone
 			input(name="phone",type='text', class="form-control", id="phone", value=values ? values.phone : '')
+
+			label(for="university") University
+			input(name="university",type='text', class="form-control", id="univesity", value=values ? values.university : '')
+
+			label(for="password") Password
+			input(name="password",type='password', class="form-control", id="password", value=values ? values.password : '') 
+			//- label(for="avatar") Avatar
+			//- input(name="avatar",type='file', class="form-control-file", id="avatar", value=values ? values.avatar : '')
 		button(class="btn btn-primary") Create
+		//, enctype="multipart/form-data"

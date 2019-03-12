@@ -7,10 +7,12 @@ var router = express.Router()
 
 router.get('', controller.index);
 
-router.get('/create', controller.create);
+router.get('/create', controller.getCreate);
+
+router.post('/create', controller.postCreate);
+
+router.get('/search', controller.search);
 
 router.get('/:id', controller.find);
-
-router.post('/create', controller.post)
 
 module.exports = router;
